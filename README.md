@@ -49,3 +49,7 @@ git push -u origin main
 
 link - https://github.com/mustafamadraswala/simple-dvc-demo
 
+if any update in readme -
+git add . && git commit -m "update README.md"
+and then push it to the repository
+git push origin main

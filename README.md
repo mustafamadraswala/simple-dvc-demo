@@ -77,4 +77,13 @@ Params.yaml
 git add . && git commit -m "params added"
 git push origin main
 
+Create src/get_data.py - Add the data 
+Add code according to the video
+
+Create src/load_data.py - Load the data
+Add code according to the video
+
 Dvc.yaml
+add stage1
+push to github
+

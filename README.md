@@ -54,6 +54,7 @@ git add . && git commit -m "update README.md"
 ```
 
 Create a repo on github - simple_dvc_demo -
+
 Push an existing repository from the command line -
 
 git remote add origin https://github.com/mustafamadraswala/simple-dvc-demo.git
@@ -70,3 +71,10 @@ And then push it to the repository -
 ``` bash
 git push origin main
 ```
+
+Code for -
+Params.yaml
+git add . && git commit -m "params added"
+git push origin main
+
+Dvc.yaml

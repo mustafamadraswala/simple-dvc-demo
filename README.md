@@ -28,28 +28,45 @@ paste winequality.csv file
 Download the data from 
 https://drive.google.com/drive/folders/1xw0XX-WK74uxtFFLySbtnX-ODdmdK5Ec
 
+``` bash
 git init
-
+```
+``` bash
 dvc init
-
+```
+``` bash
 dvc add data_given/wine_quality.csv #When you want your data to be tracked for all the changes
-
+```
+``` bash
 git add . #To add the data in the staging area
-
+```
+``` bash
 git config user.email "museychamp@gmail.com"
+```
+``` bash
 git config user.email "mustafamadraswala"
+```
+``` bash
 git commit -m "first commit"
+```
+``` bash
 git add . && git commit -m "update README.md"
+```
 
-Create a repo on github - simple_dvc_demo
-push an existing repository from the command line
+Create a repo on github - simple_dvc_demo -
+Push an existing repository from the command line -
+
 git remote add origin https://github.com/mustafamadraswala/simple-dvc-demo.git
 git branch -M main
 git push -u origin main
 
 link - https://github.com/mustafamadraswala/simple-dvc-demo
 
-if any update in readme -
+If any update in readme -
+``` bash
 git add . && git commit -m "update README.md"
-and then push it to the repository
+```
+And then push it to the repository - 
+``` bash
 git push origin main
+```

@@ -32,10 +32,20 @@ git init
 
 dvc init
 
-dvc add data_given/wine_quality.csv
+dvc add data_given/wine_quality.csv #When you want your data to be tracked for all the changes
 
 git add . #To add the data in the staging area
 
 git config user.email "museychamp@gmail.com"
 git config user.email "mustafamadraswala"
 git commit -m "first commit"
+git add . && git commit -m "update README.md"
+
+Create a repo on github - simple_dvc_demo
+push an existing repository from the command line
+git remote add origin https://github.com/mustafamadraswala/simple-dvc-demo.git
+git branch -M main
+git push -u origin main
+
+link - https://github.com/mustafamadraswala/simple-dvc-demo
+

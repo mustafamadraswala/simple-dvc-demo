@@ -87,3 +87,7 @@ Dvc.yaml
 add stage1
 push to github
 
+add stage 2
+dvc repro - #It will run all the stages
+git add . && git commit -m "stage 2 added"
+git push origin main

@@ -83,15 +83,32 @@ Add code according to the video
 Create src/load_data.py - Load the data
 Add code according to the video
 
-Dvc.yaml
-add stage1
-push to github
+In Dvc.yaml -
+add stage 1
+git rm -r --cached 'data\raw\winequality.csv' #Stop tracking from git
 
+dvc repro - #It will run all the stages
+git add . && git commit -m "stage 2 added"
+git push origin main #push to github
+========================================================
 add stage 2
+git rm -r --cached 'data\raw\winequality.csv' #Stop tracking from git
+
+dvc repro - #It will run all the stages
+git add . && git commit -m "stage 2 added"
+git push origin main
+==========================================================================
+Create report directory
+create files params.json and scores.json
+
+Make changes to train_test_evalutae.py - dvc.yaml and params.yaml
+
+Add stage 3
+git rm -r --cached 'data\raw\winequality.csv' #Stop tracking from git
+
 dvc repro - #It will run all the stages
 git add . && git commit -m "stage 2 added"
 git push origin main
 
-Create report directory
-create files params.json and scores.json
-
+To check the difference between metrics
+dvc metrics diff
